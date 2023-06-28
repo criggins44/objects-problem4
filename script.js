@@ -15,12 +15,14 @@ an object contains the specified key.
  	}
  }
 
+
 //console.log(teams.hasOwnProperty('georgia'))
 
 const checkProperty = (object, key) => {
 
 	 return object.hasOwnProperty(key);
+//if the object has the specified key, then the function will return "true". 
+//if not, then it will return "false"
 }
 
 console.log(checkProperty(teams.alabama, 'tiger'));
-//console.log(teams.alabama)
