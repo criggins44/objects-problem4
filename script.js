@@ -5,19 +5,22 @@ Create an object, then write a JavaScript function that checks whether
 an object contains the specified key.
 */
 
-const conferences = {
+ const teams = {
+ 	georgia: 'Bulldogs',
+ 	flroida: 'Gators',
+ 	lousiana: 'tigers',
+ 	alabama: {
+ 		elephant: 'roll tide',
+ 		tiger: 'war eagle'
+ 	}
+ }
 
-	sec: {
-		georgia: 'Bulldogs',
-		florida: 'Gators',
-	},
+//console.log(teams.hasOwnProperty('georgia'))
 
-	acc: {
-		kentucky: 'Cardinals',
-		indiana: 'Fighting Irish',
-	},
+const checkProperty = (object, key) => {
 
-	michigan: 'Wolverines',
-	missouri: 'Tigers',
+	 return object.hasOwnProperty(key);
 }
-console.log(conferences.hasOwnProperty(florida))
+
+console.log(checkProperty(teams.alabama, 'tiger'));
+//console.log(teams.alabama)
